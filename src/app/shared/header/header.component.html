@@ -1,0 +1,33 @@
+<div class="container bg-danger text-center pt-1">
+    <div class="row mt-2 p-2">
+        <div class="col-md-4">
+            <button routerLink="home"
+                    class="btn btn-primary">Home</button>
+        </div>
+        <div class="col-md-4">
+            <button routerLink="contacto"
+                    class="btn btn-primary">Contacto</button>
+        </div>
+        <div class="col-md-4">
+            <button routerLink="quienes-somos"
+                    class="btn btn-primary">Quienes somos</button>
+        </div>
+    </div>
+    <div class="mt-5 pb-3 row">
+        <div  class="text-center">
+            <!--Emitir un valor con input type color-->
+            <input 
+            type="color" 
+            value="#ff0000" 
+            id="color" 
+            name="color"
+            (input)="enviarColor($event)"
+            />
+            <h1></h1>
+        </div>
+        <h1></h1>
+    </div>
+   
+</div>
+
+<!--Ojo que el color se tiene que mostrar en la pagina-->
